@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Alter Source</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+		}
+
+		body {
+			font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			overflow: hidden;
+			background: #000;
+			color: #fff;
+		}
+
+		.bg {
+			position: fixed;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			filter: blur(8px);
+			transform: scale(2.0);
+			z-index: -1;
+		}
+
+		.card {
+			width: min(90%, 720px);
+			border: 3px solid rgba(255, 255, 255, 0);
+			border-radius: 16px;
+			padding: 28px;
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.06));
+			backdrop-filter: blur(4px);
+			box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+			text-align: center;
+			width: 50%;
+			height: 70%;
+		}
+
+		.card h1 {
+			margin: 0 0 8px 0;
+			font-size: 1.5rem;
+		}
+
+		.card p {
+			margin: 0;
+			color: rgba(255, 255, 255, 0.9);
+		}
+
+		@media (max-width: 480px) {
+			.card {
+				padding: 18px;
+			}
+
+			.card h1 {
+				font-size: 1.2rem;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<img class="bg" src="stuff/bg1.png" alt="Background image">
+	<div class="card" role="region">
+		<h1>Alter Source</h1>
+		<!--TODO: make the page cuz im a lazy ass-->
+	</div>
+</body>
+
+</html>
